@@ -86,18 +86,16 @@ public class AuthenticationRestController {
     }
 
     @GetMapping("/all")
-    public UserEntity findAll (@RequestBody Long id) {
-
-        return userService.findById(id);
+    public String all () {
+        return "all";
     }
     @GetMapping("/user")
-    public UserEntity findUser (@RequestBody UserEntity userEntity) {
-
-        return userService.findByUsername(userEntity.getUsername());
+    public String user () {
+        return "user";
     }
 
     @GetMapping("/admin")
-    public List<UserEntity> AllUser () {
-        return userService.getAll();
+    public String admin () {
+        return "admin";
     }
 }

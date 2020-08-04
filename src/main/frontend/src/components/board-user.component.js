@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import UserService from "../service/user.service"
+import AuthService from "../service/auth.service";
 
 /**
  *
@@ -44,6 +45,7 @@ export default class BoardUser extends Component {
                     <h1>{this.state.content}</h1>
                 </header>
             </div>
+
         );
     }
 } 

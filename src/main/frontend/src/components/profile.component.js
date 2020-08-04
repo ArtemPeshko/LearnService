@@ -29,8 +29,8 @@ export default class Profile extends Component{
                 </header>
 
                 <p> 
-                    {currentUser.accessToken.substring(0, 20)}...{" "}
-                    {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
+                    {currentUser.token.substring(0, 20)}...{" "}
+                    {currentUser.token.substr(currentUser.token.length - 20)}
                 </p>
                 <p>
                     <strong>Id</strong>
